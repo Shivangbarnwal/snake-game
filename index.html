@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="icon.png">
+    <title>Viper Voyage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="snakeimg">
+        <img src="backsnake.svg" alt="" id="backsnake">
+    </div>
+    <div class="sidebar">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="links">
+            <h2>Themes</h2>
+            <ul id="boardsopt">
+                <li><img src="boardtheme/1.png" alt="" class="boarddisplayopt" onclick="changeback(1)"></li>
+                <li><img src="boardtheme/2.png" alt="" class="boarddisplayopt" onclick="changeback(2)"></li>
+                <li><img src="boardtheme/3.png" alt="" class="boarddisplayopt" onclick="changeback(3)"></li>
+                <li><img src="boardtheme/4.png" alt="" class="boarddisplayopt" onclick="changeback(4)"></li>
+                <li><img src="boardtheme/5.png" alt="" class="boarddisplayopt" onclick="changeback(5)"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="maingame">
+            <div class="stats">
+                <div id="scoreBox">Score: 0</div>
+                <div id="hiscoreBox">HiScore: 0</div>
+            </div>
+            <div id="board"></div>
+        </div>
+    </div>
+</body>
+<script src="game.js"></script>
+</html>

@@ -5,7 +5,7 @@ document.querySelector(".sidebar .toggle-btn").addEventListener("click",function
 let back=1;
 function changeback(back) {
     var boardpattern=document.getElementById("board");
-    boardpattern.style.backgroundImage=`url(boardtheme/${back}.png)`;
+    boardpattern.style.backgroundImage=`url(${back}.png)`;
 }
 let InputDir={x:0, y:0};
 let speed=10;

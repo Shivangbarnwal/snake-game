@@ -43,7 +43,7 @@ function gameEngine(){
     //updating snake array
     if (isCollide(snakeArr)){
         InputDir={x:0, y:0};
-        alert("Game Over, press any key to play again");
+        alert("Game Over, press OK to play again");
         snakeArr=[{x:13,y:15}];
         score=0;
         scoreBox.innerHTML="Score: "+score;
